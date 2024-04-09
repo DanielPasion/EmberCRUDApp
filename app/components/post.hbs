@@ -1,7 +1,7 @@
 <div class="form">
     <div class="heading">
         <div class = "title">{{@post.title}}</div>
-        <div class = "delete">🗑️</div>
+        <div class = "delete" {{on 'click' this.getID}}>🗑️</div>
     </div>
     <hr/>
     <div class = "body">{{@post.body}}</div>

@@ -43,6 +43,10 @@ h1 {
   border-radius: 5px;
 }
 
+.form .heading .delete:hover {
+  cursor:grab;
+}
+
 .button {
   margin-top: 1vh;
   height: 2vh;
