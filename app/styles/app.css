@@ -1,11 +1,56 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 body {
-    background-color: plum;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: plum;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+}
+
+.form {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 2vw;
+  border-radius: 5px;
+  height: 20vh;
+}
+
+.form .heading {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.form .heading .title {
+  font-weight: 900;
+  position: relative;
+  float: left;
+}
+
+.form .heading .delete {
+  font-weight: 900;
+  position: relative;
+  float: right;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 1vh;
+  height: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  margin-left: 45%;
+  margin-right: 45%;
+  border-radius: 5px;
 }

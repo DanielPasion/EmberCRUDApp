@@ -1,0 +1,6 @@
+<div class="button">
+    <LinkTo @route="createpost">Create a post</LinkTo>
+</div>
+{{#each @model as |post|}}
+    <Post @post={{post}}/>
+{{/each}}
