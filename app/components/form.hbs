@@ -1,10 +1,12 @@
-<div class="form">
-    <h2>Add a post!</h2>
-    <label>Add a Title:</label>
-    <input type="text" placeholder="Title...">
-    <label>Add a Body:</label>
-    <input type="text" placeholder="Body..." size="50">
-    <div class="button">
-        <LinkTo @route="index">Submit Post</LinkTo>
-    </div>
-</div>
+<form {{on "submit" this.onSubmit}}>
+ <div>Create A Post!</div>
+ <label>
+    <span>Enter a title: </span>
+    <Input @value={{this.title}} />
+  </label>
+ <label>
+    <span>Body</span>
+    <Input @value={{this.body}} />
+  </label>
+  <button type="button" disabled={{this.disableSubmit}} {{on "click" this.onSubmit}}>Submit!</button>
+</form>
